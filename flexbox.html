@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Semantic Flex | Modern Webpage</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>✨</span> SemanticFlow
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Insights</a></li>
+                <li><a href="#" class="btn-cta">Get in touch</a></li>
+            </ul>
+            <button class="hamburger" id="menuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <ul class="nav-mobile" id="mobileMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Insights</a></li>
+            <li><a href="#">Get in touch</a></li>
+        </ul>
+    </nav>
+
+    <header class="assignment-header">
+        <div class="assignment-container">
+            <div class="assignment-text">
+                <h1>Week-5 Assignment</h1>
+                <p>Style a HTML webpage using Flexbox for layout and add a responsive navbar</p>
+            </div>
+            <div class="assignment-badge">
+                HTML5 + Flexbox
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="intro-section">
+            <div class="intro-text">
+                <h2>Welcome to my Project Webpage</h2>
+                <p>Built with proper HTML5 structure, semantic tags (header, main, section, article, footer), and a fully responsive layout powered by CSS Flexbox. Modern, clean, and accessible.</p>
+            </div>
+            <div class="intro-icon">
+                🚀
+            </div>
+        </section>
+
+        <article class="featured-article">
+            <h2>Featured Article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum consequatur rerum corporis aliquid eligendi, ipsam magnam itaque possimus! Impedit molestiae similique expedita totam quisquam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nemo hic, adipisci inventore earum consequatur! Quidem a maxime non dolores quia qui, laboriosam odio commodi.</p>
+        </article>
+
+        <div class="info-grid">
+            <div class="grid-card">
+                <div class="emoji">🧱</div>
+                <h3>Semantic Tags</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium qui iure dolorem alias aliquid sapiente temporibus, a consequatur quam iusto.</p>
+            </div>
+            <div class="grid-card">
+                <div class="emoji">🎯</div>
+                <h3>Flexbox Layout</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore cumque voluptatum laudantium aliquid vero ex beatae ut voluptatibus amet.</p>
+            </div>
+            <div class="grid-card">
+                <div class="emoji">📱</div>
+                <h3>Responsive Navbar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, explicabo. Mollitia excepturi ut rerum quo vero neque sit tempore consequatur.</p>
+            </div>
+            <div class="grid-card">
+                <div class="emoji">♿</div>
+                <h3>Accessible</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, reprehenderit perferendis! Veritatis earum cupiditate pariatur laborum blanditiis perspiciatis necessitatibus mollitia?</p>
+            </div>
+        </div>
+
+        <div class="two-col-flex">
+            <div class="col">
+                <h3>Paragraph 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti modi nobis reiciendis odit impedit, odio quos, eos illum esse assumenda nihil! Veritatis vero nemo porro cum dolor alias numquam totam..</p>
+            </div>
+            <div class="col">
+                <h3>Paragraph 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia culpa minus voluptatibus cum iusto similique corporis quas fuga. Quisquam error odit consequatur ullam distinctio.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section About-Us">
+                <h3>About Us</h3>
+                <p>Creating Semantics, since 2026</p>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem;">Dedicated to clean, maintainable HTML & CSS.</p>
+            </div>
+            <div class="footer-section Quick-Links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section Contact">
+                <h3>Contact</h3>
+                <p>Email: lawalyasir700@ggmail.com</p>
+                <p>Phone: 09085558519</p>
+                <p style="margin-top: 0.4rem;">Lagos, Nigeria</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2025 SemanticFlex — Week 3 Assignment | Built with semantic HTML5 + CSS Flexbox
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menuBtn');
+        const menu = document.getElementById('mobileMenu');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            menu.classList.toggle('open');
+        });
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            btn.classList.remove('open');
+            menu.classList.remove('open');
+        }));
+    </script>
+
+</body>
+</html>
